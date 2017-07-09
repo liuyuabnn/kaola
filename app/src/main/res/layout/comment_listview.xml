@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/comment_list_head_iv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/comment_list_nickname_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/comment_list_head_iv"
+        android:layout_toRightOf="@id/comment_list_head_iv"
+        android:text="laoliu" />
+
+    <TextView
+        android:id="@+id/comment_list_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/comment_list_head_iv"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/comment_list_nickname_tv"
+        android:text="laoliu" />
+
+    <TextView
+        android:id="@+id/comment_list_content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment_list_nickname_tv"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/comment_list_head_iv"
+        android:text="laoliu" />
+
+
+</RelativeLayout>

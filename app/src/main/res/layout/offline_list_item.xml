@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/offline_list_iv1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#777777" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/offline_list_iv1"
+        android:layout_alignRight="@id/offline_list_iv1"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_offline_radio_play_all_normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/offline_list_iv1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/offline_list_tv1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="我乐个去"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/offline_list_tv2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/ic_recommend_right_more_press"
+            android:gravity="center_vertical"
+            android:text="共离线1期节目"
+            android:textColor="#bab6b6"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/offline_list_tv3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="1.0M"
+            android:textColor="#bab6b6"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

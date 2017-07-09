@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#e6dcdc" />
+    <!--第一部分-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <!--第一个imageview-->
+        <LinearLayout
+            android:id="@+id/tuijian_zhuanti"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/tuijian_jifen_iv1"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="专题"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <!--第二个imageview-->
+        <LinearLayout
+            android:id="@+id/tuijian_huodong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/tuijian_jifen_iv2"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活动"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <!--第三个imageview-->
+        <LinearLayout
+            android:id="@+id/tuijian_jifenshangcheng"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/tuijian_jifen_iv3"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="积分商城"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--第二部分-->
+    <LinearLayout
+        android:id="@+id/tuijian_pingdaozixuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e6dcdc"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_setting_seggestion"
+            android:drawablePadding="5dp"
+            android:text="频道自选"
+            android:textColor="#e42f2f"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="以下频道可以根据个人喜好自由调整啦··"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

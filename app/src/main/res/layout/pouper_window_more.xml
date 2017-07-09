@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_popup_more"
+        android:clickable="true"
+        android:drawableLeft="@drawable/go_to_detail_icon"
+        android:drawablePadding="5dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="查看专辑详情"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_popup_more"
+        android:clickable="true"
+        android:drawableLeft="@drawable/timing_exit_icon"
+        android:drawablePadding="5dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="设置定时退出"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_popup_more"
+        android:clickable="true"
+        android:drawableLeft="@drawable/alarm_radio_icon"
+        android:drawablePadding="5dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="设置本电台为闹钟"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#eeeeee" />
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_popup_more"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="moreClick"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="取消"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

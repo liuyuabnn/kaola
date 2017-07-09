@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kaola.iml" filepath="$PROJECT_DIR$/kaola.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myvideoview2/myvideoview2.iml" filepath="$PROJECT_DIR$/myvideoview2/myvideoview2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testzxing/testzxing.iml" filepath="$PROJECT_DIR$/testzxing/testzxing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/toolbar/toolbar.iml" filepath="$PROJECT_DIR$/toolbar/toolbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/：vitamio/：vitamio.iml" filepath="$PROJECT_DIR$/：vitamio/：vitamio.iml" />
+    </modules>
+  </component>
+</project>

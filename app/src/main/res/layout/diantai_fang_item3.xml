@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#e6dcdc" />
+    <!--标题更多横线-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/item_diantai_name_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今日必听"
+            android:textColor="#080707"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/item_diantai_more_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/btn_web_next"
+            android:text="更多"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/item_diantai_name_tv3"
+            android:layout_marginTop="10dp"
+            android:background="#99aea7a7" />
+
+    </RelativeLayout>
+
+    <!--第一排三个子项-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--第一个item-->
+        <com.qf.ly.fm.discover.ui.utlpath.widget.DTfangView
+            android:id="@+id/DTfangView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp" />
+
+        <!--第二个item-->
+        <com.qf.ly.fm.discover.ui.utlpath.widget.DTfangView
+            android:id="@+id/DTfangView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp" />
+
+        <!--第三个item-->
+        <com.qf.ly.fm.discover.ui.utlpath.widget.DTfangView
+            android:id="@+id/DTfangView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

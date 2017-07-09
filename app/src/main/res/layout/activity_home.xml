@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/DrawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.qf.ly.fm.other.ui.HomeActivity">
+
+        <!-- 写一个占位的标签，专门用来装fragment对象的 -->
+        <FrameLayout
+            android:id="@+id/fragContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <RadioGroup
+            android:id="@+id/home_rg"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#e1e7db"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!--默认选中第一个-->
+            <RadioButton
+                android:id="@+id/home_discover_rb"
+                style="@style/home_rb"
+                android:checked="true"
+                android:drawableTop="@drawable/select_home_rb_discover"
+                android:text="@string/discover" />
+
+            <RadioButton
+                android:id="@+id/home_mine_rb"
+                style="@style/home_rb"
+                android:drawableTop="@drawable/select_home_rb_mine"
+                android:text="@string/mine" />
+
+            <RadioButton
+                android:id="@+id/home_offline_rb"
+                style="@style/home_rb"
+                android:drawableTop="@drawable/select_home_rb_offline"
+                android:text="@string/offline" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <!--菜单布局放在DrawerLayout里最后一个或者android:layout_gravity="left"-->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/NavigationView"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        app:headerLayout="@layout/menu_header"
+        app:menu="@menu/menu_navigation" />
+</android.support.v4.widget.DrawerLayout>

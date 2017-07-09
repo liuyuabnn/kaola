@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:background="#777"
+        android:id="@+id/tuijian_item_iv"
+        android:layout_width="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="100dp" />
+
+    <ImageView
+        android:id="@+id/tuijian_item_iv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tuijian_item_iv"
+        android:layout_alignRight="@id/tuijian_item_iv"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_offline_radio_play_all_normal" />
+
+    <TextView
+        android:id="@+id/tuijian_item_tv_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tuijian_item_iv"
+        android:layout_alignLeft="@id/tuijian_item_iv"
+        android:layout_margin="10dp"
+        android:text="二货一箩筐"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/tuijian_item_tv_rname"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tuijian_item_iv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="一个让感情升温的办法，屡试不爽" />
+
+</RelativeLayout>

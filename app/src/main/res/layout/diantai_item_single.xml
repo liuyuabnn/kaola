@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/diantai_single_item_iv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/diantai_item_tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/diantai_single_item_iv"
+        android:layout_alignLeft="@id/diantai_single_item_iv"
+        android:layout_margin="10dp"
+        android:text="二货一箩筐"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/diantai_item_tv_2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diantai_single_item_iv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="屡试不爽" />
+
+</merge>

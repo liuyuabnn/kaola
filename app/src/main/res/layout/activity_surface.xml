@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_surface"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qf.ly.fm.discover.ui.activity.SurfaceActivity">
+
+    <SurfaceView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="changeScreen"
+        android:text="切换至横屏" />
+
+    <TextView
+        android:id="@+id/play_voive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawableLeft="@drawable/btn_myradio_listen_press"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

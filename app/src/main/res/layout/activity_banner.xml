@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_banner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qf.ly.fm.other.ui.BannerActivity">
+    <!--先写下面的图片-->
+    <ImageView
+        android:id="@+id/below_iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_default_flash" />
+
+    <ImageView
+        android:id="@+id/banner_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/below_iv"
+        android:background="#FAFAFA"
+        android:scaleType="fitXY" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@id/banner_iv"
+        android:layout_alignRight="@id/banner_iv"
+        android:layout_margin="10dp"
+        android:background="@drawable/select_banner_btn"
+        android:onClick="skip"
+        android:text="跳过"
+        android:textSize="18sp" />
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/feilei_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--自定义控件如果是继承View并且没有重写onMeasure方法，
+           高度是wrap_content, 父布局如果有ScrollView那么不显示高度，
+         如果外面没有ScrollView，那就是match_parent-->
+        <com.qf.ly.fm.discover.ui.utlpath.widget.FenLeiView
+            android:id="@+id/fenleiview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/fenlei_bottom_fenlei_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:text="分类"
+            android:textSize="18sp" />
+
+        <com.qf.ly.fm.discover.ui.utlpath.widget.MyGridView
+            android:id="@+id/fenlei_gv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#aba4a4"
+            android:padding="1dp"
+            android:layout_margin="10dp"
+            android:listSelector="#aba4a4"
+            android:numColumns="4"
+            android:horizontalSpacing="1dp"
+            android:verticalSpacing="1dp" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

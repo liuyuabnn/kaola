@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_bottom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_alignParentBottom="true"
+    android:background="#88000000"
+    android:orientation="horizontal"
+    android:visibility="gone">
+    <!-- 播放按钮 -->
+    <ImageView
+        android:id="@+id/view_bottom_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="10dp"
+        android:src="@mipmap/ic_play" />
+
+    <!-- 耗时 -->
+    <TextView
+        android:id="@+id/view_bottom_btime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="00:00:00"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <!-- 拖动条 -->
+    <SeekBar
+        android:id="@+id/view_bottom_seek"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:layout_weight="1" />
+
+    <!-- 总时长 -->
+    <TextView
+        android:id="@+id/view_bottom_etime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="00:00:00"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <!-- 切屏按钮 -->
+    <ImageView
+        android:id="@+id/view_bottom_fullscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="5dp"
+        android:src="@mipmap/ic_enlarge" />
+
+
+</LinearLayout>
